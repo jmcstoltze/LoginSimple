@@ -1,0 +1,8 @@
+db/DBConnection.class
+com/mycompany/auth/user/web/resources/JavaEE8Resource.class
+db/PersonaDAO.class
+models/Persona.class
+servlets/LoginServlet.class
+com/mycompany/auth/user/web/JAXRSConfiguration.class
+db/UsuarioDAO.class
+servlets/LogoutServlet.class
