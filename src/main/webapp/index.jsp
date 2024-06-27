@@ -16,8 +16,8 @@
         <div class="login-form">
             <h2>Inicio de Sesión</h2>
             <form action="LoginServlet" method="post">
-                <input type="text" name="username" placeholder="Ingrese nombre de usuario" required/>
-                <input type="password" name="password" placeholder="Ingrese contraseña" required/>
+                <input type="text" name="username" placeholder="Ingrese nombre de usuario"/>
+                <input type="password" name="password" placeholder="Ingrese contraseña"/>
                 <input type="submit" value="Iniciar Sesión" href="views/principal.jsp"/>
                 <p>¿No tienes una cuenta? <a href="">Regístrate aquí</a></p>
             </form>
