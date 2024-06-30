@@ -25,13 +25,13 @@ public class LogoutServlet extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        HttpSession session = request.getSession(false); // Obtenemos la sesión actual, si existe
+        HttpSession session = request.getSession(false); // Obtiene la sesión actual, si existe
         
         if (session != null) {
-            session.invalidate(); // Invalidamos la sesión (cerramos sesión)
+            session.invalidate(); // Invalida la sesión
         }
         
-        // Redirigimos al usuario de vuelta al inicio de sesión (o a donde prefieras)
+        // Redirige al usuario de vuelta al inicio de sesión
         response.sendRedirect(request.getContextPath() + "/index.jsp");
     }
 

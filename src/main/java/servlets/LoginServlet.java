@@ -20,7 +20,6 @@ public class LoginServlet extends HttpServlet {
     private final UsuarioDAO usuarioDAO;
     private final PersonaDAO personaDAO;
     
-
     public LoginServlet() {
         super();
         usuarioDAO = new UsuarioDAO();

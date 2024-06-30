@@ -24,6 +24,7 @@ public class UsuarioDAO {
         PreparedStatement stmt = null;
         ResultSet rs = null;
         
+        // Intenta conexión a la DB para consulta
         try {
             connection = DBConnection.getConnection();
             stmt = connection.prepareStatement(USUARIO_QUERY);
@@ -31,7 +32,7 @@ public class UsuarioDAO {
             stmt.setString(2, password);
             rs = stmt.executeQuery();
             
-            // Si el resulrtado de la consulta contiene información
+            // Si el resultado de la consulta contiene información
             if (rs.next()) {
                 isValid = true; // Usuario y contraseña validados
             }
