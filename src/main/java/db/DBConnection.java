@@ -15,9 +15,9 @@ public class DBConnection {
     }
 
     // private static final String url = "jdbc:mysql://localhost:3306/Evaluacion2";
-    
+    // private static final String user = "root";
     private static final String url = "jdbc:mysql://10.0.2.15:3306/Evaluacion2";
-    private static final String user = "root";
+    private static final String user = "root_test";
     private static final String password = "Jmcstolz99@";
 
     public static Connection getConnection() throws SQLException {
